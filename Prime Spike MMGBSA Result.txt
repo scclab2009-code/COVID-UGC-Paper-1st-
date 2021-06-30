@@ -1,0 +1,39 @@
+Prime MM-GB/SA calculation
+
+Parameters:
+Inputs: prime_mmgbsa.mae
+NJOBS:  1
+HOST:   localhost:1
+Ligand Strain: yes
+Executing protein-only minimization calculation
+Energy Components (kcal/mol)
+
+-------------------------------------------------------------------------
+     dG(1)     dG(2)    G_comp     G_lig     G_rec   Lstrain Ligand_Title
+-------------------------------------------------------------------------
+    -15.95    -18.40  -14163.59    -80.13 -14067.51    2.45   SR01
+
+    -17.91    -25.09  -14108.54    -33.12  -14067.51    7.18   SC02
+
+    -4.89     -11.66  -14112.29    -39.89  -14067.51    6.77   SBC03
+
+    -19.22    -22.75  -14205.09    -161.49 -14067.51    3.53  ST04
+
+    -17.96    -22.03  -14270.14    -80.70  -14067.51    4.07  SBB05
+
+    -19.58    -21.23  -14427.09    -70.87  -14067.51    1.65  SPG06
+
+    -13.22   - 19.49  -14374.10    -21.53  -14067.51    6.27  SRA07
+
+    
+  
+
+dG(1) = E_complex(minimized) - ( E_ligand(minimized) + E_receptor )
+dG(2) = E_complex(minimized) - ( E_ligand(from minimized complex) + E_receptor )
+dG(1) includes ligand strain energy
+dG(2) is the ligand/receptor interaction energy of the complex
+Final energetic and structural results in Maestro format: prime_mmgbsa_scclab-out.mae
+Prime MM-GBSA calculation completed
+Fri April 13 10:13:23 2021
+
+
